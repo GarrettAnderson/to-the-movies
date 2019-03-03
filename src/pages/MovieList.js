@@ -2,30 +2,49 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 class MovieList extends Component {
-  render() {
-    // let apiKey = '76fa766989bc43019f44915308d9d724'
+  // let apiKey = '76fa766989bc43019f44915308d9d724'
+  state = {
+    movies: []
+  }
+
+  componentDidMount() {
     let apiURL =
       'https://api.themoviedb.org/3/movie/now_playing?api_key=76fa766989bc43019f44915308d9d724&language=en-US&page=1'
-    axios.post(apiURL).then((resp) => {
+    axios.get(apiURL).then((resp) => {
       console.log(resp)
+      console.log(resp.data.results)
+      // return resp.data.results
+      this.setState({
+        movies: resp.data.results
+      })
+      // console.log(movies)
+      // console.log(resp)
+      // console.log(movies)
     })
+  }
 
+  render() {
     return (
       <section>
-        <figure>
-          <img src="" />
-          <figcaption>
-            <h2>Movie Title</h2>
-            <p>Description</p>
-            <p>Release Date</p>
-            <ol>
-              <li>Titanic</li>
-              <li>ET</li>
-              <li>Batman</li>
-              <li>Showgirls</li>
-            </ol>
-          </figcaption>
-        </figure>
+        <ol>
+          {this.state.movies.map((movie, i) => {
+            console.log(movie.poster_path)
+            return (
+              <li key={i}>
+                <figure>
+                  <img
+                    src={`https://api.themoviedb.org/3/movie/now_playing?api_key=76fa766989bc43019f44915308d9d724&language=en-US&page=1${movie.poster_path}`}
+                  />
+                  <figcaption>
+                    <h2>{movie.title}</h2>
+                    <p>{movie.release_date}</p>
+                    <p>{movie.overview}</p>
+                  </figcaption>
+                </figure>
+              </li>
+            )
+          })}
+        </ol>
       </section>
     )
   }
