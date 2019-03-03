@@ -9,7 +9,8 @@ class MovieList extends Component {
     movieId: "",
     title: "",
     releaseDate: "",
-    cast: ""
+    cast: "",
+    image: ""
   };
 
   componentDidMount() {
@@ -26,10 +27,20 @@ class MovieList extends Component {
       // console.log(resp)
       // console.log(movies)
     });
-
+    // this.getCast() function is called
     let imageURL =
       "https://api.themoviedb.org/3/movie/399579/images?api_key=76fa766989bc43019f44915308d9d724&language=en-US";
   }
+
+  // getCast = () => {
+  //   axios.get(apiURL).then(resp => {
+  //     console.log(resp);
+  //     console.log(resp.data.results);
+  //     // return resp.data.results
+  //     this.setState({
+  //       cast: resp.data.results
+  //     });
+  // }
 
   render() {
     return (
