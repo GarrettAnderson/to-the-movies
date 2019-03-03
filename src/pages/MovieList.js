@@ -4,7 +4,8 @@ import axios from 'axios'
 class MovieList extends Component {
   // let apiKey = '76fa766989bc43019f44915308d9d724'
   state = {
-    movies: []
+    movies: [],
+    movieId: ''
   }
 
   componentDidMount() {
@@ -21,6 +22,9 @@ class MovieList extends Component {
       // console.log(resp)
       // console.log(movies)
     })
+
+    let imageURL =
+      'https://api.themoviedb.org/3/movie/399579/images?api_key=76fa766989bc43019f44915308d9d724&language=en-US'
   }
 
   render() {
@@ -32,9 +36,7 @@ class MovieList extends Component {
             return (
               <li key={i}>
                 <figure>
-                  <img
-                    src={`https://api.themoviedb.org/3/movie/now_playing?api_key=76fa766989bc43019f44915308d9d724&language=en-US&page=1${movie.poster_path}`}
-                  />
+                  <img src={`https://image.tmdb.org/t/p/original${movie.poster_path}`} />
                   <figcaption>
                     <h2>{movie.title}</h2>
                     <p>{movie.release_date}</p>
