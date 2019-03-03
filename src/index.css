@@ -5,8 +5,51 @@
 html {
   height: 100%;
 }
-
 body {
   margin: 0;
   min-height: 100%;
+  background-image: url("./images/retro.jpg");
+  /* background-image: url('./images/ben-konfrst-1327857-unsplash.jpg'); */
+
+  background-size: cover;
+}
+
+header {
+  color: aquamarine;
+  text-align: center;
+  background-image: url("./images/ben-konfrst-1327857-unsplash.jpg");
+  background-size: cover;
+  background-position-y: 117rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  border: 15px dotted limegreen;
+  background-color: lightgoldenrodyellow;
+  width: 70%;
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+section h2 {
+  font-family: "Coiny";
+}
+
+figure img {
+  width: 13rem;
+}
+
+figcaption {
+  color: orchid;
+}
+
+figcaption p {
+  color: deeppink;
+  font-family: "Montserrat";
 }
