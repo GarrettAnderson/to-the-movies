@@ -56,11 +56,13 @@ class MovieList extends Component {
               return (
                 <li key={index}>
                   <figure>
-                    <img
-                      src={`https://image.tmdb.org/t/p/original${
-                        movie.poster_path
-                      }`}
-                    />
+                    <Link to={`/${this.state.movies[index].id}`}>
+                      <img
+                        src={`https://image.tmdb.org/t/p/original${
+                          movie.poster_path
+                        }`}
+                      />
+                    </Link>
                     <figcaption>
                       <h2>
                         <Link to={`/${this.state.movies[index].id}`}>
