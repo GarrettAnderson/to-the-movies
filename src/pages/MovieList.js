@@ -47,7 +47,7 @@ class MovieList extends Component {
 
   render() {
     return (
-      <div>
+      <div className="main-content">
         <Header display={this.state.randomMovie} />
         <section>
           <main>
