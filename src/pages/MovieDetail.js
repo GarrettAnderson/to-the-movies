@@ -49,7 +49,7 @@ class MovieDetail extends Component {
     // const currentMovie = this.state.movies[this.props.match.params.Movie];
     // console.log(currentMovie);
     return (
-      <section>
+      <section className="image-detail">
         <figure>
           <img src={`https://image.tmdb.org/t/p/original${this.state.image}`} />
           <figcaption>

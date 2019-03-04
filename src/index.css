@@ -10,8 +10,7 @@ body {
   min-height: 100%;
   /* background-image: url("./images/retro.jpg"); */
   /* background-image: url('./images/ben-konfrst-1327857-unsplash.jpg'); */
-  background: url("./images/hence-the-boom-439955-unsplash.jpg") no-repeat
-    center center fixed;
+  background: url("./images/hence-the-boom-439955-unsplash.jpg") no-repeat center center fixed;
 }
 
 header {
@@ -61,6 +60,13 @@ figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.image-detail {
+  border: 1rem solid black;
+  background-color: lightgoldenrodyellow;
+  list-style: none;
+  margin: 1rem;
 }
 
 figure img {
