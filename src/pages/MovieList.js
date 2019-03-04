@@ -50,7 +50,7 @@ class MovieList extends Component {
           <h3>Films</h3>
         </header> */}
         <main>
-          <ol>
+          <ol className="box">
             {this.state.movies.map((movie, index) => {
               console.log(movie.poster_path);
               return (

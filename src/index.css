@@ -8,10 +8,10 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-image: url("./images/retro.jpg");
+  /* background-image: url("./images/retro.jpg"); */
   /* background-image: url('./images/ben-konfrst-1327857-unsplash.jpg'); */
-
-  background-size: cover;
+  background: url("./images/hence-the-boom-439955-unsplash.jpg") no-repeat
+    center center fixed;
 }
 
 header {
@@ -28,9 +28,25 @@ main {
   align-items: center;
 }
 
-section {
-  border: 15px dotted limegreen;
+.box {
+  display: flex;
+  flex-wrap: no-wrap;
+}
+
+.box ol li {
+  flex: 0 0 33.3333%;
+}
+
+main ol li {
+  border: 1rem solid black;
   background-color: lightgoldenrodyellow;
+  list-style: none;
+  margin: 1rem;
+}
+
+section {
+  /* border: 15px dotted limegreen;
+  background-color: lightgoldenrodyellow; */
   width: 70%;
   margin: 3rem;
   display: flex;
@@ -41,8 +57,16 @@ section h2 {
   font-family: "Coiny";
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 figure img {
+  display: flex;
   width: 13rem;
+  justify-content: center;
 }
 
 figcaption {
