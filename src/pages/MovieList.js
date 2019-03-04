@@ -64,7 +64,7 @@ class MovieList extends Component {
                         <h2>
                           <Link to={`/${this.state.movies[index].id}`}>{movie.title}</Link>
                         </h2>
-                        <p>{movie.release_date}</p>
+                        <p>{new Date(movie.release_date).toLocaleDateString()}</p>
                         <p>{movie.overview}</p>
                       </figcaption>
                     </figure>
