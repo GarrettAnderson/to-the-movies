@@ -40,7 +40,7 @@ main ol li {
   border: 1rem solid black;
   background-color: lightgoldenrodyellow;
   list-style: none;
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 
 section {
@@ -54,6 +54,11 @@ section {
 
 section h2 {
   font-family: "Coiny";
+}
+
+a {
+  text-decoration: none;
+  color: rgb(199, 7, 109);
 }
 
 figure {
@@ -76,10 +81,12 @@ figure img {
 }
 
 figcaption {
-  color: orchid;
+  color: rgb(78, 11, 76);
 }
 
 figcaption p {
-  color: deeppink;
+  color: rgb(105, 13, 62);
   font-family: "Montserrat";
+  font-size: 1rem;
+  font-weight: bold;
 }
