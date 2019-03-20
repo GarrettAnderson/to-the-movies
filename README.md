@@ -1,5 +1,4 @@
 # To The Movies
-# Hooked Color Picker
 
 #### To The Movies is a React application that queries The Movie Database API.
 #### The project lists movies that have been extracted and displayed on the front end.
