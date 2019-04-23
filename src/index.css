@@ -7,10 +7,6 @@ html {
 }
 body {
   margin: 0;
-  min-height: 100%;
-  /* background-image: url("./images/retro.jpg"); */
-  /* background-image: url('./images/ben-konfrst-1327857-unsplash.jpg'); */
-  background: url("./images/hence-the-boom-439955-unsplash.jpg") no-repeat center center fixed;
 }
 
 header {
@@ -24,8 +20,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: rgba(255, 255, 255, 0.3);
-  background-blend-mode: lighten; */
 }
 
 header h1 {
@@ -53,16 +47,9 @@ main {
 
 ol {
   padding: 0;
-}
-
-/* .box {
   display: flex;
-  flex-wrap: no-wrap;
+  flex-direction: column;
 }
-
-.box ol li {
-  flex: 0 0 33.3333%;
-} */
 
 main ol li {
   border: 1rem solid black;
@@ -72,10 +59,7 @@ main ol li {
 }
 
 section {
-  /* border: 15px dotted limegreen;
-  background-color: lightgoldenrodyellow; */
-  /* width: 70%; */
-  margin: 3rem;
+  margin: 1rem;
   display: flex;
   justify-content: center;
 }
@@ -106,7 +90,7 @@ figure {
 
 figure img {
   display: flex;
-  width: 20rem;
+  width: 100%;
   justify-content: center;
 }
 
@@ -122,4 +106,38 @@ figcaption p {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 0;
+}
+
+.main-content {
+  min-height: 100%;
+  background: url("./images/hence-the-boom-439955-unsplash.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.main-content main {
+  width: 100%;
+}
+
+@media only screen and (min-width: 568px) {
+  main ol li {
+    border: 1rem solid black;
+    background-color: lightgoldenrodyellow;
+    list-style: none;
+    margin-bottom: 1rem;
+    width: 40%;
+  }
+
+  main ol {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  figcaption p {
+    color: rgb(105, 13, 62);
+    font-family: "Montserrat";
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0;
+  }
 }
