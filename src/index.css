@@ -82,6 +82,7 @@ section {
 
 section h2 {
   font-family: "Coiny";
+  margin-bottom: 0;
 }
 
 a {
@@ -105,7 +106,7 @@ figure {
 
 figure img {
   display: flex;
-  width: 13rem;
+  width: 20rem;
   justify-content: center;
 }
 
@@ -120,4 +121,5 @@ figcaption p {
   font-family: "Montserrat";
   font-size: 1rem;
   font-weight: bold;
+  margin-top: 0;
 }
